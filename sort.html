@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" type="text/css" href="sort.css">
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <button class="sort-button" id="bubble-sort">Bubble Sort</button>
+      <button class="sort-button" id="quick-sort">Quick Sort</button>
+      <button class="sort-button" id="merge-sort">Merge Sort</button>
+      <button class="sort-button" id="insertion-sort">Insertion Sort</button>
+    </div>
+    <div class="array-container"></div>
+    <div class="bottom-controls">
+      <button id="generate-array" class="sort-button">Generate New Array</button>
+      <div class="size-speed-controls">
+        <span id="size-label">Size:</span>
+        <input id="array-size" type="range" min="5" max="100" step="1" value="50">
+        <span id="speed-label">Speed:</span>
+        <input id="speed" type="range" min="1" max="100" step="1" value="50">
+      </div>
+    </div>
+  </div>
+  <script src="sort.js"></script>
+</body>
+</html>
